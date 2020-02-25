@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/Icon.svg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <title> Home | Beauty Online Collection </title>
+
+</head>
+
+
+<header>
+  <img src="Images/Logo1.svg" alt="" height="100%" width='25%'>
+
+
+</header>
+
+
+<body>
+
+
+  <div>
+    <ul class="menu">
+      <li> <a href="index.html" style="text-decoration: none;"> Home</a></li>
+      <li> <a href="Products.html" style="text-decoration: none;">Products</a></li>
+      <li> <a href="Order.html" style="text-decoration: none;">Order</a></li>
+      <li> <a href="Contact.html" style="text-decoration: none;">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/1.jpeg" style="width:100%" height="250px">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/2.jpeg" style="width:100%" height="250px">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/3.jpeg" style="width:100%" height="250px">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="Images/4.jpeg" style="width:100%" height="250px">
+
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 10 seconds
+    }
+  </script>
+
+
+<div class ='intro'>
+<p>We have wide range of Contact lenses with different colors & tones.  We give you a clear world of your own with our contact lenses. </p>
+<p> Upgrade your eyewear wardrobe with our gorgeous eye lens and get the best eye lens price in Pakistan.</p>
+<p>At low cost & attrective packages.</p>
+  
+</div>
+<br>
+<hr>
+<br>
+<div>
+
+  <h1 class ='intro'>How to apply Contact Lenses</h1>
+  <iframe width="100%" height="750" src="https://www.youtube.com/embed/0-LzBpP7SDI" 
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
+
+</div>
+
+</body>
+
+</html>
